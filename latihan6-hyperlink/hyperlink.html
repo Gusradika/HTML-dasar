@@ -8,7 +8,58 @@
 </head>
 <body>
     
-    <!-- Dalam Hyperlink akan ada <a> atau Anchor -->
+    <!-- Dalam Hyperlink akan ada <a> atau Anchor
+        yang berfungsi untuk menautkan link pada halaman web kita
+        kita dapat menggunakan anchor <a> dengan menggunakan atribut href=""
+            jika tidak ada href="" maka <a> anchor tidak akan Valid    
+
+        isi dari href="" adalah link dari External maupun internal contoh 
+        href="www.google.com"
+        Full Code :
+        <a href="http://www.google.com"> Button </a>
+
+        Jika tidak ada http:// pada href maka tidak akan dapat merefrensikan nilai ke external link.
+        maka untuk merefrensikan nilai ke external link diperlukan http://
+    -->
+
+    <!--EXTERNAL LINK-->
+    <h3>Contoh External Link : Harus menggunakan "http://domainaddress.com"</h3>
+    <p>Klik <a href="http://www.google.com">disini</a> untuk mengetahui informasi lebih lanjut.</p>
+    <hr>
+
+    <!--INTERNAL LINK-->
+    <h3>Contoh Internal Link : Harus menggunakan "Namafile.html"</h3>
+    <p>Klik <a href="halaman2.html">disini</a> untuk mengetahui informasi lebih lanjut.</p>
+    
+
+    <!--INTERNAL LINK | RELATIVE URL-->
+    <!--jika anda masuk folder maka anda harus keluar dari folder itu dengan cara ../ 
+        ../ artinya naik satu folder dari folder terakhir. lalu definisikan file mana yang akan dibuka
+    -->
+    <h3>Contoh Internal Link - RELATIVE URL : Harus menggunakan "Dir/Namafile.html"</h3>
+    <p>Klik <a href="admin/halaman3.html">disini</a> untuk mengetahui informasi lebih lanjut.</p>
+
+    <!-- Kita dapat mengidentifikasikan setiap Tag melalui ID dan kita dapat link ID tersebut ke Anchor
+            Namun jangan lupa untuk menulis # disetiap href anchor. # bermaksud untuk sebagai penanda id.
+            (CEK ARTIKEL.HTML ATAU KLIK DIBAWAH UNTUK DEMO!)
+    -->
+    <h3>Study Kasus Anchor #index #about</h3>
+    <p>Klik <a href="artikel.html">disini</a></p>
+
+    <hr>
+    <!--
+        ada beberapa Atribute yang digunakan untuk Membuka new TAB pada Anchor yaitu :
+        dengan atribute  
+        target =""
+
+        dan bernilai :
+        _self = default
+        _blank = New Tab
+        _parent = berhubungan dengan frame (tidak dibahas disini)
+        _top = berhubungan dengan frame (tidak dibahas disini)
+    -->
+    <h3>Anchor New Tab on click - : caranya dengan tulis atribute didalam anchor</h3>
+    <p>Klik <a href="admin/halaman3.html" target="_blank">disini</a> (dibuka pada tab baru)</p>
 
 </body>
 </html>
