@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML IMG</title>
+</head>
+<body>
+
+    <!--kita dapat menambahkan IMG dengan cara <img> dan menambahkan atribut src="" didalamnya
+    ada 2 cara kita dapat menambahkan IMG yaitu cara Internal dan cara External nama format file
+    harus selalu di tulis-->
+
+    <!--Internal Source - -->
+    <h3>Internal Source</h3>
+    <img src="dolphin.jpg" alt="Gambar Lumba-Lumba" title="HTML IMG Dasar" width="200">
+
+    <!-- <img src="image/dolphin.jpg"> -->
+    
+    <!-- Macam2 Atribut yang di miliki oleh Img yaitu : 
+        src="" |berfungsi sebagai source. dimana gambar itu di ambil
+        alt="" |berguna untuk alternatif text pada gambar,
+                jika gambar rusak atau tidak tampil maka yang tampil adalah tulisan alt
+        title="" |digunakan untuk memberikan judul di gambar.
+                  title muncul ketika kita meletakan cursor kita pada gambar trsbt
+        width="" |Untuk mengatur Lebar dengan satuan Pixel. 
+                 (jika memasukan angka maka di ukur dgn angka, jika persen maka diukur dgn persen)
+                 Jika ditulis salah satu tanpa height dan sebaliknya maka akan proposisi.
+                 persen dalam penulisan widht / height adalah satuan dari halamanya. jika 100% maka full halaman.
+                 jika kita resize browser maka akan terus berusaha 100% dari halamannya.
+        Height"" |untuk mengatur tinggi dengan satuan pixel.
+                 (jika memasukan angka maka di ukur dgn angka, jika persen maka diukur dgn persen)
+    -->
+
+    <!--External Source dan Hyperlink Img -->
+
+    <!-- untuk menambahkan Img dari external source kita harus cari dulu img nya dan klik kanan 
+         pilih copy image address. setelah itu paste ke src img. hati2 dengan Copyright dsb.
+    -->
+    <h3>External Source dan Hyperlink Img</h3>
+    <a href="http://google.com">
+        <img src="https://cdn-icons.flaticon.com/png/128/1481/premium/1481160.png?token=exp=1657365190~hmac=77981549f1cd555857f9160e8af3a9ed">
+    </a>
+
+</body>
+</html>
