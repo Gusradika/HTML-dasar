@@ -1,4 +1,8 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" widht="50">
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" width="70">
+  <br>
+  <b>HTML5 Dasar</b>
+</p>
+<hr>
 Basic HTML Learning
 
 Repo ini digunakan untuk pembelajaran HTML tingkat dasar (Pemula).
