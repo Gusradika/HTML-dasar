@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    
+    <!--Form. secara umum form digunakan untuk inputan2 oleh user cara menggunakan form adalah
+    dengan cara tag <form> yang di isikan element2 didalamnya. dalam form sendiri ada beberapa
+        element yang bisa di tambahkan meliputi :
+
+    input       |berfungsi sebagai inputan user
+    textarea    |berfungsi sebagai text field, seperti message, komentar dll
+    select      |digunakan untuk DropDown
+    Button      |tombol
+    label       |menandai element input
+-->
+    <h3>element input</h3>
+
+    <!--dalam element input ada berbagai atribut yang bisa dimasukan ke type :
+                        <input type="ATRIBUTE">
+        text            |berfungsi sebagai text inputan (Default)
+        password        |berfungsi sebagai Password inputan
+        radio           |berfungsi sebagai radio button
+        checkbox        |untuk inputan lebih dari 1
+
+        *JARANG DIGUNAKAN*
+        submit          |berfungsi sebagai submit
+        reset           |
+        button          |
+    -->
+
+    <!--Kelebihan menggunakan label adalah jika kita klik tulisan maka dia akan otomatis
+    klik Form inputan juga. tetapi <label> harus didefinisikan untuk element yang mana?
+        melalui id-->
+    <form>
+        <h4>Input type : Text</h4>
+        <label for="username">Username :</label>
+        <input id="username" type="text">
+    <br>
+
+    <!--Tipe password digunakan untuk menyembunyikan inputan agar tidak dapat dibaca langsung melainkan
+    yang muncul adalah sensor-->
+        <h4>Input type : Password</h4>
+        <label for="password">Password :</label>
+        <input id="password" type="password">
+        <br>
+
+
+        <!--Untuk radiobutton kita harus menggunakan grouped agar kita tidak bisa mengeklik kedua pilihan button
+            kita dapat menggroup dengan menggunakan atribute yang beranama name="" jika dalam 1 group maka definisikanlah
+            itu dalam 1 nama yang sama-->
+        <h4>Input type : radio</h4>
+        <input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+        <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+        <br>
+        
+        <!--Checkbox biasa digunakan untuk inputan atau pilihan yang menjuru lebih dari 1-->
+        <h4>Input type : checkbox</h4>
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+        <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+        <input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+        <input type="checkbox" id="berenang"><label for="berenang">berenang</label>
+        <br>
+        
+        <!--Submit digunakan untuk mengsubmit inputan kita. tetapi kita juga dapat mengganti
+        tulisan submit menjadi sesuatu yang lain dengan menambahkan atribut bernama value=""
+        tetapi sebenarnya Submit bukanlah bagian dari input melainkan bagian dari button!
+        maka jangan gunakan submit pada input.-->
+        <h4>Input type : checkbox</h4>
+        <input type="submit" value="kirim">
+    </form>
+
+</body>
+</html>
