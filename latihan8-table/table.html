@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+<body>
+    
+    <!--Table digunakan untuk menampilkan Score, Kalender, Nilai, Nama depan nama belakang dan lain sebagainya
+    Struktur tabel terdiri dari : 
+    -Header
+    -Kolom
+    -Baris
+
+    Kita dapat menggunakan Table dengan tag <table> dan gunakan <tr> (Table Row) dan <td> (table data)
+    -->
+    <h3>Table Dasar</h3>
+    <table>
+        <tr>
+            <td>Baris 1, kolom 1</td>
+            <td>Baris 1, kolom 2</td>
+        </tr>
+        <tr>
+            <td>Baris 2, kolom 1</td>
+            <td>Baris 2, kolom 2</td>
+        </tr>
+    </table>
+
+    <br><br><br><br>
+
+    <!--Untuk table yang lebih kompleks ada tag baru yaitu <thead> (<th>) dan <tbody>-->
+    <h3>Header Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Kolom 1</th>
+                <th>Kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Baris 1</th>
+                <td>Baris 1, kolom 1</td>
+                <td>Baris 1, kolom 2</td>
+            </tr>
+            <tr>
+                <th>Baris 2</th>
+                <td>Baris 2, kolom 1</td>
+                <td>Baris 2, kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br><br>
+
+    <!--Atribut2 dari Table sendiri meliputi :
+    CSS (sebaiknya di isi melalui Css)
+    border="" |berfungsi sebagai garis di sekitar border
+    cellspacing="" |berfungsi sebagai menambah jarak antar cell
+    cellpadding="" |memberi luas kepada cell-->
+
+    <h3>Atribut Table</h3>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Kolom 1</th>
+                <th>Kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Baris 1</th>
+                <td>Baris 1, kolom 1</td>
+                <td>Baris 1, kolom 2</td>
+            </tr>
+            <tr>
+                <th>Baris 2</th>
+                <td>Baris 2, kolom 1</td>
+                <td>Baris 2, kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br><br>
+
+    <!--atribut yang lainya adalah di peruntukan untuk menggabungkan 2 atau lebih cell
+    atribut ini bernama colspan (Collum Span) dan rowspan (Row Span)-->
+
+    <h3>Table Merging</h3>
+    <h4>Table Default</h4>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+    
+    <h4>Table Colspan</h4>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>1,1</td>
+                <td colspan="2">Colspan 2</td>
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td>2,2</td>
+                <td>2,3</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+
+        <h4>Table Rowspan</h4>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td rowspan="3">Rowspan 3</td>
+                <td colspan="2">Colspan 2</td>
+            </tr>
+            <tr>
+                <td>2,2</td>
+                <td>2,3</td>
+            </tr>
+            <tr>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+
+    <br><br><br><br>
+
+    <hr>
+
+
+
+    
+    <h3>Latihan Table</h3>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td colspan="2" rowspan="2"></td>
+            <td>2,4</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,4</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
+    </table>
+
+</body>
+</html>
